@@ -44,13 +44,16 @@ The remaining columns are converted to numeric values.
 ## Results Visualization
 The predictions are visualized using a scatter plot, comparing the true values vs. predicted values. A red 45-degree line is plotted to show perfect predictions.
 
-Fig1. ![Artist vs Spotify Playlist Reach by Albums](results/Artist%20vs%20Spotify%20Playlist%20Reach%20by%20Albums.png)
+Fig1. Artist vs Spotify Playlist Reach by Albums
+![Artist vs Spotify Playlist Reach by Albums](results/Artist%20vs%20Spotify%20Playlist%20Reach%20by%20Albums.png)
 The first scatter plot visualizes the relationship between artists and their respective Spotify Playlist Reach, with each point colored according to the album name. The y-axis represents the playlist reach, indicating how many unique Spotify users could be exposed to a given song through curated playlists.
 
 Fig2. Artist vs Spotify Popularity by Albums
+![Artist vs Spotify Popularity by Albums](results/Artist%20vs%20Spotify%20Popularity%20by%20Albums.png)
 The second bar chart compares the Spotify popularity score of different artists and their respective albums. The popularity score is a Spotify metric ranging from 0 to 100 that reflects the recent streaming performance of an artist.
 
 Fig3. Correlation Heatmap of Features
+![Correlation Heatmap of Features](results/Correlation%20Heatmap%20of%20Features.png)
 The heatmap provides insight into the pairwise correlation between various digital engagement and streaming metrics across platforms like YouTube, TikTok, Spotify, Apple Music, and more.
 
 ## Model Training and Evaluation
