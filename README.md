@@ -44,7 +44,7 @@ The remaining columns are converted to numeric values.
 ## Results Visualization
 The predictions are visualized using a scatter plot, comparing the true values vs. predicted values. A red 45-degree line is plotted to show perfect predictions.
 
-Fig1. Artist vs Spotify Playlist Reach by Albums
+Fig1. [Artist vs Spotify Playlist Reach by Albums](results/Artist vs Spotify Playlist Reach by Albums.png)
 The first scatter plot visualizes the relationship between artists and their respective Spotify Playlist Reach, with each point colored according to the album name. The y-axis represents the playlist reach, indicating how many unique Spotify users could be exposed to a given song through curated playlists.
 
 Fig2. Artist vs Spotify Popularity by Albums
