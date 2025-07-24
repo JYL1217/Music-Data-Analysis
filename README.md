@@ -8,7 +8,7 @@ This project aims to predict the popularity of Spotify songs in 2024 based on va
 - [Getting Started](#getting-started)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Training and Evaluation](#model-training-and-evaluation)
-- [Evaluation Metrics](#evaluation-metrics)
+- [Evaluation Metrics](#model-training-and-evaluation)
 - [Results Visualization](#results-visualization)
 
 
@@ -60,17 +60,18 @@ The heatmap provides insight into the pairwise correlation between various digit
 1. Training the Model:
 The dataset is split into training and testing sets (80% train, 20% test).
 A RandomForestRegressor model is trained using the training data.
+
 2. Model Evaluation:
 The model is evaluated using the following metrics:
-Mean Absolute Error (MAE)
-Mean Squared Error (MSE)
-Root Mean Squared Error (RMSE)
-R² Score
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score
 
 ## Future Improvements
 Here are some potential improvements for future iterations of the project:
 
-Hyperparameter Tuning: Use GridSearchCV or RandomizedSearchCV to tune hyperparameters and improve model performance.
-Cross-Validation: Implement cross-validation to ensure the model generalizes well to unseen data.
-Feature Importance: Visualize and interpret feature importances to understand which variables contribute most to predictions.
-Model Comparison: Test other regression models (e.g., GradientBoostingRegressor, XGBoost) to compare performance.
+* Hyperparameter Tuning: Use GridSearchCV or RandomizedSearchCV to tune hyperparameters and improve model performance.
+* Cross-Validation: Implement cross-validation to ensure the model generalizes well to unseen data.
+* Feature Importance: Visualize and interpret feature importances to understand which variables contribute most to predictions.
+* Model Comparison: Test other regression models (e.g., GradientBoostingRegressor, XGBoost) to compare performance.
