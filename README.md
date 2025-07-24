@@ -27,7 +27,7 @@ The key tasks include:
 
 To get started with this project, ensure you have Python 3.x installed along with the following dependencies:
 
-pip install pandas seaborn matplotlib scikit-learn
+`pip install pandas seaborn matplotlib scikit-learn`
 
 ## Data Preprocessing
 The data is loaded from a CSV file, and several preprocessing steps are performed:
