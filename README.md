@@ -46,6 +46,8 @@ The second bar chart compares the Spotify popularity score of different artists 
 ![Correlation Heatmap of Features](results/Correlation%20Heatmap%20of%20Features.png)
 The heatmap provides insight into the correlation between digitial engagement and streaming metrics across platforms (Spotify, YouTube, TikTok, Apple Music, etc), to help identify which features are most interelated.
 
+Details source code can refer to [here](notebooks/main_EDA.ipynb)
+
 
 ## Data Preprocessing
 The data is loaded from a CSV file, and several preprocessing steps are performed:
@@ -79,7 +81,7 @@ Below figure shows the model evaluation results:
 The model's predictions are evaluated (and visualized) using a scatter plot comparing the `true Spotify Popularity values` (x-axis) vs. the `predicted values` (y-axis). A red 45-degree line indicates the perfect predictions - points near the linw how accurate results, while devidation reflects prediction errors. The plot demostrates reasonable alignment, particularly for mid-to-high popularity tracks. 
 
 
-More details can refer to [here](notebooks/main_train.ipynb)
+Details source code can refer to [here](notebooks/main_train.ipynb)
 
 ## Future Improvements
 Here are some potential improvements for future iterations of the project:
