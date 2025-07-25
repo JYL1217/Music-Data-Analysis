@@ -7,10 +7,9 @@ This project aims to predict the popularity of Spotify songs in 2024 based on va
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 - [Data Preprocessing](#data-preprocessing)
+- [Data Visualization](#data-visualization)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Evaluation Metrics](#model-training-and-evaluation)
-- [Results Visualization](#results-visualization)
-
 
 ## Overview
 
@@ -41,32 +40,44 @@ Categorical features (like 'Artist') are encoded using LabelEncoder to make them
 Comma characters in object-type columns are removed.
 The remaining columns are converted to numeric values.
 
-## Results Visualization
-The predictions are visualized using a scatter plot, comparing the true values vs. predicted values. A red 45-degree line is plotted to show perfect predictions.
 
-Fig1. Artist vs Spotify Playlist Reach by Albums
+## Data Visualization
+To better understand the dataset before modeling, the following visualizations highlights dataset key patterns: 
+
+**Fig1. Artist vs Spotify Playlist Reach by Albums**
+
 ![Artist vs Spotify Playlist Reach by Albums](results/Artist%20vs%20Spotify%20Playlist%20Reach%20by%20Albums.png)
-The first scatter plot visualizes the relationship between artists and their respective Spotify Playlist Reach, with each point colored according to the album name. The y-axis represents the playlist reach, indicating how many unique Spotify users could be exposed to a given song through curated playlists.
+This scatter plot visualizes the relationship between artists and their respective Spotify Playlist Reach - each point represents an album, colored according to its name. The The y-axis displays each album’s playlist reach -  indicating how many unique Spotify users potentially exposed via curated playlists.
 
-Fig2. Artist vs Spotify Popularity by Albums
+**Fig2. Artist vs Spotify Popularity by Albums**
+
 ![Artist vs Spotify Popularity by Albums](results/Artist%20vs%20Spotify%20Popularity%20by%20Albums.png)
 The second bar chart compares the Spotify popularity score of different artists and their respective albums. The popularity score is a Spotify metric ranging from 0 to 100 that reflects the recent streaming performance of an artist.
 
-Fig3. Correlation Heatmap of Features
+**Fig3. Correlation Heatmap of Features**
+
 ![Correlation Heatmap of Features](results/Correlation%20Heatmap%20of%20Features.png)
-The heatmap provides insight into the pairwise correlation between various digital engagement and streaming metrics across platforms like YouTube, TikTok, Spotify, Apple Music, and more.
+The heatmap provides insight into the correlation between digitial engagement and streaming metrics across platforms (Spotify, YouTube, TikTok, Apple Music, etc), to help identify which features are most interelated.
+
 
 ## Model Training and Evaluation
-1. Training the Model:
+**1. Training the Model:**
 The dataset is split into training and testing sets (80% train, 20% test).
 A RandomForestRegressor model is trained using the training data.
 
-2. Model Evaluation:
+**2. Model Evaluation:**
 The model is evaluated using the following metrics:
 * Mean Absolute Error (MAE)
 * Mean Squared Error (MSE)
 * Root Mean Squared Error (RMSE)
 * R² Score
+
+Below figure shows the model evaluation results: 
+
+![Artist vs Spotify Popularity by Albums](results/True%20Values%20vs%20Predicted%20Values.png)
+
+The model's predictions are evaluated (and visualized) using a scatter plot comparing the `true Spotify Popularity values` (x-axis) vs. the `predicted values` (y-axis). A red 45-degree line indicates the perfect predictions - points near the linw how accurate results, while devidation reflects prediction errors. The plot demostrates reasonable alignment, particularly for mid-to-high popularity tracks. 
+
 
 ## Future Improvements
 Here are some potential improvements for future iterations of the project:
