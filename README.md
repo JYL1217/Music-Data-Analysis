@@ -6,8 +6,8 @@ This project aims to predict the popularity of Spotify songs in 2024 based on va
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
-- [Data Preprocessing](#data-preprocessing)
 - [Data Visualization](#data-visualization)
+- [Data Preprocessing](#data-preprocessing)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Evaluation Metrics](#model-training-and-evaluation)
 
@@ -16,30 +16,17 @@ This project aims to predict the popularity of Spotify songs in 2024 based on va
 This repository contains code that processes Spotify song data, builds a machine learning model to predict song popularity, and evaluates the model's performance.
 
 The key tasks include:
-1. Data cleaning and preprocessing
-2. Feature selection and encoding
-3. Model training using `RandomForestRegressor`
-4. Model evaluation using multiple metrics
-5. Visualization of predictions
+1. Data visualization
+2. Data cleaning and preprocessing
+3. Feature selection and encoding
+4. Model training using `RandomForestRegressor`
+5. Model evaluation using multiple metrics
 
 ## Getting Started
 
 To get started with this project, ensure you have Python 3.x installed along with the following dependencies:
 
 `pip install pandas seaborn matplotlib scikit-learn`
-
-## Data Preprocessing
-The data is loaded from a CSV file, and several preprocessing steps are performed:
-
-1. Handling Missing Values:
-Columns with over 50% missing values are dropped.
-Rows with missing 'Spotify Popularity' values are also removed.
-2. Feature Encoding:
-Categorical features (like 'Artist') are encoded using LabelEncoder to make them suitable for machine learning models.
-3. Data Cleaning:
-Comma characters in object-type columns are removed.
-The remaining columns are converted to numeric values.
-
 
 ## Data Visualization
 To better understand the dataset before modeling, the following visualizations highlights dataset key patterns: 
@@ -58,6 +45,19 @@ The second bar chart compares the Spotify popularity score of different artists 
 
 ![Correlation Heatmap of Features](results/Correlation%20Heatmap%20of%20Features.png)
 The heatmap provides insight into the correlation between digitial engagement and streaming metrics across platforms (Spotify, YouTube, TikTok, Apple Music, etc), to help identify which features are most interelated.
+
+
+## Data Preprocessing
+The data is loaded from a CSV file, and several preprocessing steps are performed:
+
+1. Handling Missing Values:
+Columns with over 50% missing values are dropped.
+Rows with missing 'Spotify Popularity' values are also removed.
+2. Feature Encoding:
+Categorical features (like 'Artist') are encoded using LabelEncoder to make them suitable for machine learning models.
+3. Data Cleaning:
+Comma characters in object-type columns are removed.
+The remaining columns are converted to numeric values.
 
 
 ## Model Training and Evaluation
