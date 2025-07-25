@@ -67,10 +67,10 @@ A RandomForestRegressor model is trained using the training data.
 
 **2. Model Evaluation:**
 The model is evaluated using the following metrics:
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* Root Mean Squared Error (RMSE)
-* R² Score
+* Mean Absolute Error (MAE): 5.545894736842105
+* Mean Squared Error (MSE): 107.55582842105264
+* Root Mean Squared Error (RMSE): 10.370912612738218
+* R² Score: 0.6259828267292307
 
 Below figure shows the model evaluation results: 
 
@@ -78,6 +78,8 @@ Below figure shows the model evaluation results:
 
 The model's predictions are evaluated (and visualized) using a scatter plot comparing the `true Spotify Popularity values` (x-axis) vs. the `predicted values` (y-axis). A red 45-degree line indicates the perfect predictions - points near the linw how accurate results, while devidation reflects prediction errors. The plot demostrates reasonable alignment, particularly for mid-to-high popularity tracks. 
 
+
+More details can refer to [here](notebooks/main_train.ipynb)
 
 ## Future Improvements
 Here are some potential improvements for future iterations of the project:
