@@ -49,7 +49,9 @@ The heatmap provides insight into the correlation between digitial engagement an
 Details source code can refer to [here](notebooks/main_EDA.ipynb)
 
 
-## Data Preprocessing
+## Data Modeling
+
+### Data Preprocessing
 The data is loaded from a CSV file, and several preprocessing steps are performed:
 
 1. Handling Missing Values:
@@ -62,7 +64,7 @@ Comma characters in object-type columns are removed.
 The remaining columns are converted to numeric values.
 
 
-## Model Training and Evaluation
+### Model Training and Evaluation
 **1. Training the Model:**
 The dataset is split into training and testing sets (80% train, 20% test).
 A RandomForestRegressor model is trained using the training data.
@@ -83,7 +85,7 @@ The model's predictions are evaluated (and visualized) using a scatter plot comp
 
 Details source code can refer to [here](notebooks/main_train.ipynb)
 
-## Future Improvements
+### Future Improvements
 Here are some potential improvements for future iterations of the project:
 
 * Hyperparameter Tuning: Use GridSearchCV or RandomizedSearchCV to tune hyperparameters and improve model performance.
